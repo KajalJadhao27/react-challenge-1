@@ -1,9 +1,11 @@
 import React, {useState, useContext} from 'react'
 import UserContext from '../Context/UserContext'
 
+
 function Login() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  
 
  const {setUser} = useContext (UserContext)
 
@@ -14,7 +16,7 @@ function Login() {
   }
 
   return (
-    <div>
+    <div >
       <h2>Login
         <input type='text'
         value={username}
